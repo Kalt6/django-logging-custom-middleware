@@ -28,8 +28,8 @@ Setup
 
 Clone the repository:
 
-git clone https://github.com/<kalt>/django-logging-example.git
-cd django-logging-example
+git clone https://github.com/kalt/django-logging-custom-middleware.git
+cd django-logging-custom-middleware
 
 
 Create a virtual environment and activate it:
