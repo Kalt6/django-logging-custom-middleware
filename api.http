@@ -1,0 +1,27 @@
+### Get request
+requests.get(
+'http://127.0.0.1:8002/api/home'
+)
+
+
+### Post request
+post(
+'http://127.0.0.1:8002/api/home'
+)
+
+
+
+### Simple POST request to Home endpoint
+POST http://127.0.0.1:8002/api/home/ HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "kalt",
+    "email": "kalt@mail.com",
+    "note": "This is a test payload"
+}
+
+
+
+

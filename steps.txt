@@ -1,0 +1,19 @@
+Steps to request and response logging middleware to help track info about client server communication
+
+
+Setup virtual environment
+Activate your virtual environment
+Install django, djangorestframework
+Put libraries installed with its versions in requirementd.txt file
+Start project with the django-admin startproject projectname .
+Create your app with the manage.py startapp command
+Add app name to installed apps in settings
+If no custom models are created, go straight to manage.py migrate [No custom models, No makemigrations]
+Create urls for your app
+Include your app urls in your project urls
+Create your view for the paths in your app urls
+Create custom middleware to accept 'request' as argument
+Create create log using it level and the things request arguments can access [request.method, request.status_code]
+Register your middle wear in the settings.middleware[Request middleware must come after common-middleware but before auth-middleware (Search for why request-log-middleware must come before and after them)]
+Now add your LOGGING to settings to take care of formatting, where logs should appear, version, if other logging apps should stop etc
+
